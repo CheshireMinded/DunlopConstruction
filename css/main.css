@@ -91,7 +91,6 @@ body {
     color: var(--onyx);
     background-color: var(--porcelain);
     overflow-x: hidden;
-    max-width: 75ch; /* Tighten line lengths to ~60-75 chars */
 }
 
 /* ===== TYPOGRAPHY ===== */
