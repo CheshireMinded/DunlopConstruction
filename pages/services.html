@@ -43,19 +43,19 @@
                     <span class="logo-text">Dunlop Construction</span>
                 </a>
             </div>
-            <div class="nav-menu" id="nav-menu">
+            <div class="nav-menu" id="nav-menu" role="navigation" aria-label="Main navigation">
                 <a href="../index.html" class="nav-link">Home</a>
-                <a href="services.html" class="nav-link active">Services</a>
+                <a href="services.html" class="nav-link active" aria-current="page">Services</a>
                 <a href="portfolio.html" class="nav-link">Portfolio</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="contact.html" class="nav-link">Contact</a>
                 <a href="faqs.html" class="nav-link">FAQs</a>
             </div>
-            <div class="nav-toggle" id="nav-toggle">
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -326,7 +326,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
     <script>
         // Lightbox functionality
         function openLightbox(imageSrc, imageAlt) {

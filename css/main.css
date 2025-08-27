@@ -288,6 +288,20 @@ section {
     flex-direction: column;
     cursor: pointer;
     gap: 4px;
+    background: none;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    transition: var(--transition-fast);
+}
+
+.nav-toggle:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.nav-toggle:focus {
+    outline: 2px solid var(--champagne);
+    outline-offset: 2px;
 }
 
 .nav-toggle span {
@@ -295,6 +309,7 @@ section {
     height: 3px;
     background: var(--onyx);
     transition: var(--transition-fast);
+    border-radius: 2px;
 }
 
 /* Enhanced responsive navigation */
@@ -323,6 +338,9 @@ section {
         transition: var(--transition-normal);
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         box-shadow: var(--shadow-medium);
+        z-index: 999;
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
     }
     
     .nav-menu.active {
@@ -337,12 +355,22 @@ section {
     
     .nav-link {
         font-size: 1.1rem;
-        padding: 0.75rem 0;
+        padding: 1rem 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        display: block;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
     }
     
     .nav-link:last-child {
         border-bottom: none;
+    }
+    
+    .nav-link:hover,
+    .nav-link:focus {
+        background: rgba(215, 201, 163, 0.1);
+        color: var(--champagne);
     }
 }
 
@@ -371,6 +399,9 @@ section {
         transition: var(--transition-normal);
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         box-shadow: var(--shadow-medium);
+        z-index: 999;
+        max-height: calc(100vh - 65px);
+        overflow-y: auto;
     }
     
     .nav-menu.active {
@@ -385,7 +416,17 @@ section {
     
     .nav-link {
         font-size: 1.15rem;
-        padding: 0.5rem 0;
+        padding: 1rem 0;
+        display: block;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-link:hover,
+    .nav-link:focus {
+        background: rgba(215, 201, 163, 0.1);
+        color: var(--champagne);
     }
 }
 
@@ -1021,6 +1062,8 @@ section {
     padding: var(--section-padding);
     background: var(--porcelain);
 }
+
+
 
 .portfolio-grid {
     display: grid;
