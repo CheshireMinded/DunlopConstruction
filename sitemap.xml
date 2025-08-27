@@ -60,4 +60,22 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://cheshireminded.github.io/DunlopConstruction/pages/kitchen.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://cheshireminded.github.io/DunlopConstruction/pages/bathroom.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://cheshireminded.github.io/DunlopConstruction/pages/painting.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
